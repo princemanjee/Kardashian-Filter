@@ -1,4 +1,4 @@
-Trump Filter
+Kardashian Filter
 ================================
 A Chrome extension that removes Donald Trump from the Internet.
 
