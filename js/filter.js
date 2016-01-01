@@ -1,7 +1,7 @@
 /*
- * Trump Filter - Content Script
+ * KARDASHIAN Filter - Content Script
  * 
- * This is the primary JS file that manages the detection and filtration of Donald Trump from the web page.
+ * This is the primary JS file that manages the detection and filtration of KARDASHIAN from the web page.
  */
 
 // Variables
@@ -11,17 +11,17 @@ var search = regex.exec(document.body.innerText);
 
 // Functions
 function filterMild() {
-	console.log("Filtering Trump with Mild filter...");
+	console.log("Filtering Kardashian with Mild filter...");
 	return $(":contains('Kardashian'), :contains('KARDASHIAN'), :contains('kardashian')").filter("h1,h2,h3,h4,h5,p,span,li");
 }
 
 function filterDefault () {
-	console.log("Filtering Trump with Default filter...");
+	console.log("Filtering Kardashian with Default filter...");
 	return $(":contains('Kardashian'), :contains('KARDASHIAN'), :contains('kardashian')").filter(":only-child").closest('div');
 }
 
 function filterVindictive() {
-	console.log("Filtering Trump with Vindictive filter...");
+	console.log("Filtering Kardashian with Vindictive filter...");
 	return $(":contains('Kardashian'), :contains('KARDASHIAN'), :contains('kardashian')").filter(":not('body'):not('html')");
 }
 
